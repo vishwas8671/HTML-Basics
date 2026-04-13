@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="myntra-bag.css">
+    <title>Myntra Bag</title>
+</head>
+<body>
+    <button class="bag-button" onclick="cartQuantity=cartQuantity+1">Add to bag</button>
+    <button class="bag-button" onclick="alert('Item has been added to bag');">Add to bag</button>
+    <button class="wish-button" onclick="alert('Item has been added to the wishlist')">Move to Wishlist</button>
+    <button class="bag-button" onclick="alert('Item has been added to bag');">Add 1 + 1 Sale Item</button>
+    <h1 id="cart-summary"></h1>
+    <script>
+        let cartQuantity = 0;
+        document.querySelector('#cart-summary').innerText= ' Your cart has ' + cartQuantity+ 'items'
+    </script>
+</body>
+</html>
